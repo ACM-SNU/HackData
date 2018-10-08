@@ -1,1439 +1,682 @@
 <!DOCTYPE html>
 <html lang="en">
-
-
-<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
 <head>
-    <link rel="apple-touch-icon" sizes="57x57" href="src/assets/images/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="src/assets/images/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="src/assets/images/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="src/assets/images/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="src/assets/images/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="src/assets/images/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="src/assets/images/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="src/assets/images/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="src/assets/images/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="src/assets/images/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="src/assets/images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="src/assets/images/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="src/assets/images/favicon-16x16.png">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:800|Poiret+One" rel="stylesheet">
-    <link rel="manifest" href="/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="HackData 2.0 is a data science hackathon being organised at Shiv Nadar University on 10-11 February, 2018.">
-
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-    <title>HackData 2018</title>
-
-
-    <link rel="stylesheet" href="dest/css/bundle.css">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
-    <script src="particles.js/particles.js"></script>
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-105609052-1', 'auto');
-      ga('send', 'pageview');
-  </script>
+	<!-- ========== Meta Tags ========== -->
+	<meta charset="UTF-8">
+	<meta name="description" content="Evento -Event Html Template">
+	<meta name="keywords" content="Evento , Event , Html, Template">
+	<meta name="author" content="ColorLib">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!-- ========== Title ========== -->
+	<title> HackData</title>
+	<!-- ========== Favicon Ico ========== -->
+	<!--<link rel="icon" href="fav.ico">-->
+	<!-- ========== STYLESHEETS ========== -->
+	<!-- Bootstrap CSS -->
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Fonts Icon CSS -->
+	<link href="assets/css/font-awesome.min.css" rel="stylesheet">
+	<link href="assets/css/et-line.css" rel="stylesheet">
+	<link href="assets/css/ionicons.min.css" rel="stylesheet">
+	<!-- Carousel CSS -->
+	<link href="assets/css/owl.carousel.min.css" rel="stylesheet">
+	<link href="assets/css/owl.theme.default.min.css" rel="stylesheet">
+	<!-- Animate CSS -->
+	<link rel="stylesheet" href="assets/css/animate.min.css">
+	<!-- Custom styles for this template -->
+	<link href="assets/css/main.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://icons8.com">
 </head>
-
-<style>
-    
-
-    .b0b{
-        border: 1px solid black;
-    }
-    .bg-white{
-        background: #fff;
-    }
-    
-    .tooltip_templates {
-        display: none;
-    }
-
-    .data-source {
-        margin-bottom: 20px;
-    }
-
-    .challenges-type-open,
-    .challenges-type-health-more,
-    .data-source--procure {
-        display: none;
-    }
-    * {
-        box-sizing: border-box;
-    }
-    .row::after {
-        content: "";
-        clear: both;
-        display: table;
-    }
-    [class*="col-"] {
-        float: left;
-        padding: 15px;
-    }
-
-    .col-1 {width: 8.33%;}
-    .col-2 {width: 16.66%;}
-    .col-3 {width: 25%;}
-    .col-4 {width: 33.33%;}
-    .col-5 {width: 41.66%;}
-    .col-6 {width: 50%;}
-    .col-7 {width: 58.33%;}
-    .col-8 {width: 66.66%;}
-    .col-9 {width: 75%;}
-    .col-10 {width: 83.33%;}
-    .col-11 {width: 91.66%;}
-    .col-12 {width: 100%;}
-</style>
-
 <body>
-  <header class="banner pacman">
-    <div class="pac-game">
-        <div class="pac">
-            <div class="pac-person">
-                <div class="pac-up"></div>
-                <div class="pac-down"></div>
-            </div>
-        </div>
-        <div class="pacfood pac-food-1"></div>
-        <div class="pacfood pac-food-2"></div>
-        <div class="pacfood pac-food-3"></div>
-        <div class="pacfood pac-food-4"></div>
-    </div>
-    
-    <div class="full-screen">
-        <div>
-          <h1 class="jugad">HackData 2.0</h1>
-          <br>
-          <span class="jugad1 m-0">Shiv Nadar University</span>
-          <br><br>
-          <a class="btn btn-primary" href="https://goo.gl/forms/n71QNMGBeLeG3bHH2">Register</a>
-      </div>
-  </div>
-  <br>
-  <p>
+<div class="loader">
+	<div class="loader-outter"></div>
+	<div class="loader-inner"></div>
+</div>
 
-  </p>
-
+<!--header start here -->
+<header class="header navbar fixed-top navbar-expand-md">
+	<div class="container">
+		<a class="navbar-brand logo" href="#">
+			<img src="assets/img/logo.jpeg" alt="HackData"/><!-- add logo here -->
+		</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#headernav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="lnr lnr-text-align-right"></span>
+		</button>
+		<div class="collapse navbar-collapse flex-sm-row-reverse" id="headernav">
+			<ul class=" nav navbar-nav menu">
+				<li class="nav-item">
+					<a class="nav-link active" href="#">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link active" href="#about">About</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link " href="#tracks">Tracks</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link " href="#participation">Participation</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link " href="#footer">Contact</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link btn btn-primary btn-rounded" href="https://docs.google.com/forms/d/e/1FAIpQLSemmmx6c0gT9VkGsTmb3pvY-rJoWYFSmt3R6CqzK-_E2F3RXA/viewform">Register Now</a>
+				</li>
+			</ul>
+		</div>
+	</div>
 </header>
+<!--header end here-->
 
-
-<nav class="navbar">
-    <div class="navbar-icon">
-    </div>
-    <ul style="position: relative;">
-        <li><a href="#about" class="link">About</a>
-        </li>
-        <li><a href="#challenges" class="link">Tracks</a>
-        </li>
-        <li><a href="#howTo" class="link">Participation</a>
-        </li>
-        <li><a href="#criteria" class="link">Judging Criteria</a>
-        </li>
-        <li><a href="#schedule" class="link">Schedule</a>
-        </li>
-        <li><a href="#sponsors" class="link">Sponsor Us</a>
-        </li>
-    </ul>
-
-</nav>
-
-
-
-
-<!-- ABout Section ================================================-->
-<section id="about" class="about">
-    <div id="particles-js">
-        <div style="display: block;position: absolute;left: 15%;right: 15%" class="content-md">
-
-            <div class="about-hackathon-logo">
-
-            </div>
-            <h2 class="title top-spacing"><b>Mission</b></h2>
-
-            <p style="font-size: 20px; line-height: 1.2;">The mission of HackData is to create a gender diverse and technologically inclined community. Our goal is to create opportunity for newcomers to explore a hackathon environment while learning and solving compelling problems.
-                <br>
-                There is a special award category for the all women's team that makes the best project! This should surely motivate females to form and work in all women's teams.
-            </p>
-
-            <br>
-
-            <h2 class="title top-spacing"><b>About HackData</b></h2>
-
-            <p style="font-size: 20px; line-height: 1.2;">Hackdata 2.0 is an inderdisciplinary and open-ended event that would bring together creative minds from a variety of fields under one roof. Engineers, business students, designers and enterpreneurs would together build solutions utilizing data science in useful and positive ways.<br>
-                A 30 hours event packed with sessions workshops and networking activities! Build a product using any dataset available in public domain and get a chance to take away home loads of swag and prizes!</p>
-
-            </p>
-
-            <br>
-
-        </div>
-    </div>
+<!--cover section slider -->
+<section id="home" class="home-cover">
+	<div class="cover_slider owl-carousel owl-theme">
+		<div class="cover_item" style="background: url('assets/img/bg/slider.png');">
+			 <div class="slider_content">
+				<div class="slider-content-inner">
+					<div class="container">
+						<div class="slider-content-center">
+							<p class="cover-xl-text">HackData</p>
+							<p class="cover-date">
+								Shiv Nadar University.
+							</p>
+							<p class="cover-date">
+								 3-4 November 2018
+							</p>
+							<a href="https://docs.google.com/forms/d/e/1FAIpQLSemmmx6c0gT9VkGsTmb3pvY-rJoWYFSmt3R6CqzK-_E2F3RXA/viewform" class=" btn btn-primary btn-rounded" >
+								Register Now
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="cover_item" style="background: url('assets/img/bg/slider.png');">
+			<div class="slider_content">
+				<div class="slider-content-inner">
+					<div class="container">
+						<div class="slider-content-left">
+							<p class="cover-xl-text">HackData</p>
+							<p class="cover-date">
+								Shiv Nadar University.
+							</p>
+							<p class="cover-date">
+								 3-4 November 2018
+							</p>
+							<a href="https://docs.google.com/forms/d/e/1FAIpQLSemmmx6c0gT9VkGsTmb3pvY-rJoWYFSmt3R6CqzK-_E2F3RXA/viewform" class=" btn btn-primary btn-rounded" >
+								Register Now
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="cover_item" style="background: url('assets/img/bg/slider.png');">
+			<div class="slider_content">
+				<div class="slider-content-inner">
+					<div class="container">
+						<div class="slider-content-center">
+							<p class="cover-xl-text">HackData</p>
+							<p class="cover-date">
+								Shiv Nadar University.
+							</p>
+							<p class="cover-date">
+								 3-4 November 2018
+							</p>
+							<a href="https://docs.google.com/forms/d/e/1FAIpQLSemmmx6c0gT9VkGsTmb3pvY-rJoWYFSmt3R6CqzK-_E2F3RXA/viewform" class=" btn btn-primary btn-rounded" >
+								Register Now
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </section>
-<!-- ABout Section ================================================-->
-
-<!-- Activities Section ================================================-->
-
-<section id="activities" class="activities">
-    <div id="particles-js1">
-        <div id="changeToRel" class="content-sm">
-
-            <figure class="img-wrap">
-                <img src="src/assets/images/schedule.svg" alt="Hackathon Schedule">
-            </figure>
-
-
-            <h2 class="title" style="margin-top: 36px;">Order of events</h2>
-
-            <ol class="list-counter">
-                <li class="list-counter__item">
-                    Individuals with different skill sets come together to form a team (maximum of 3 individuals only) and take up one of the challenges.
-                </li>
-                <li class="list-counter__item">The teams will work on creating solutions such as visualization, web app or mobile app.
-                </li>
-                <li class="list-counter__item">The judge will visit each team, while they are working, and start Pre-Evaluating each team.
-                </li>
-                <li class="list-counter__item">Shortlisted teams will have 7 minutes to present their solution</li>
-                <li class="list-counter__item">Once again, judges will evaluate each team.</li>
-                <li class="list-counter__item">The scores from judges will be tallied
-                </li>
-
-            </ol>
-
-
-        </div>
-    </div>
-
-</section>
-
-<!-- Activities Section ================================================-->
-
-<!-- Challenges Section ================================================-->
-
-<section id="challenges" class="challenges" style="padding-bottom: -20vh;">
-
-    <div class="challenges-type-health">
-
-        <div class="content-md">
-
-            <div class="paper-card-heading">
-                <h2 class="title" style="text-align: left;">Tracks</h2>
-            </div>
-
-            <div class="card-wrapper">
-
-
-                <div class="paper-card">
-                    <header class="paper-card__header" style="height: 37px;">
-                        <span class="paper-card__title"><a style="font-size: 24px;" href="challenges/jukebox.html" class="challenge link-purple">Juke Box</a></span>
-                    </header>
-
-                    <article class="paper-card__description">
-
-
-
-                        <div class="paper-card__content">
-
-                            <p class="block-with-text">
-                                Entertainment for the next gen. Automate your parties, generate your movie scripts, create music you like. Let your imagination run wild.
-                            </p>
-
-                            <a href="challenges/jukebox.html" class="challenge link-orange">Read
-                                more...</a>
-                            </div>
-
-                        </article>
-
-                    </div>
-
-                    <div class="paper-card">
-                        <header class="paper-card__header" style="height: 37px;">
-                            <span  class="paper-card__title"><a style="font-size: 24px;" href="challenges/codecruise.html" class="challenge link-purple">Code Cruise</a></span>
-                        </header>
-
-                        <article class="paper-card__description">
-
-                            <div class="paper-card__content">
-
-                                <p class="block-with-text">
-                                    Ever had a passion for travelling, ever wanted to know what lies beyond the blue seas. Now is the time to combine your talent and passion to come up with automatic vacation planner, feedback and travel assistant.
-                                </p>
-
-                                <a href="challenges/codecruise.html" class="challenge link-orange">Read
-                                    more...</a>
-                                </div>
-
-                            </article>
-
-                        </div>
-
-                        <div class="paper-card">
-                            <header class="paper-card__header" style="height: 37px;">
-                                <span class="paper-card__title"><a style="font-size: 24px;" href="challenges/bitfit.html" class="challenge link-purple">
-                                    BitFit</a></span>
-                                </header>
-
-                                <article class="paper-card__description">
-
-
-
-                                    <div class="paper-card__content">
-
-                                        <p class="block-with-text">
-                                            Design effective solutions to patients for higher quality care, and leverage new health information/tools. Aim to facilitate connections between health care providers, and patients. Social robotics, predictive analytics, image/voice recognition, are few examples of how you could transform the healthcare.
-                                        </p>
-
-                                        <a href="challenges/bitfit.html" class="challenge link-orange">Read
-                                            more...</a>
-                                        </div>
-
-                                    </article>
-
-                                </div>
-
-
-<!--                     <div style="clear: both;"></div>
-
-                    <div class="challenges-type-health-more clearfix">
-
-                        <div class="paper-card">
-                            <header class="paper-card__header" style="height: 37px;">
-                                <span class="paper-card__title"><a href="challenges/health-challenge-5.html" class="challenge link-purple">Social Health Security Programme</a></span>
-                            </header>
-                            <article class="paper-card__description">
-                                <div class="paper-card__content">
-                                    <span class="blockspan">Type of challenge</span>
-                                    <span class="blockspan">Visualization, trend analysis</span>
-                                </div>
-                                <div class="paper-card__content">
-
-
-                                    <a href="challenges/health-challenge-5.html" class="challenge link-orange">Read
-                                    more...</a>
-                                </div>
-                            </article>
-                        </div>
-
-                    </div>
-                </div>
-            -->            </div>
-            <div class="challenges-type-procurement">
-                <div class="content-md">
-
-                    <div class="card-wrapper">
-                        <div class="paper-card">
-                            <header class="paper-card__header" style="height: 37px;">
-                                <span class="paper-card__title"><a style="font-size: 24px;" href="challenges/money.html" class="challenge link-purple">Money Matters</a></span>
-                            </header>
-                            <article class="paper-card__description">
-
-                                <div class="paper-card__content">
-                                   <p class="block-with-text">
-                                    Application of technologies to disrupt services in the financial sector. It puts technology at the heart of the financial services and enhances the offerings in this domain. Examples include innovations in risk management, trading, investing, personal finance, cryptocurrency trading.
-                                </p>
-                                <a href="challenges/money.html" class="challenge link-orange">Read
-                                    more...</a>
-                                </div>
-                            </article>
-                        </div>
-                        <div style="height: 285px;" class="paper-card">
-                            <header class="paper-card__header" style="height: 37px;">
-                                <span class="paper-card__title"><a style="font-size: 24px;" href="challenges/sarkar.html" class="challenge link-purple">e-Sarkar</a></span>
-                            </header>
-                            <article class="paper-card__description">
-
-                                <div class="paper-card__content">
-                                    <p class="block-with-text">
-                                        Run your Government your way. From education to tax revenues. Help government automate it's processes.
-                                    </p>
-                                    <a href="challenges/sarkar.html" class="challenge link-orange">Read
-                                        more...</a>
-                                    </div>
-                                </article>
-                            </div>
-                            <div style="height: 285px;" class="paper-card">
-                                <header class="paper-card__header" style="height: 37px;">
-                                    <span class="paper-card__title"><a style="font-size: 24px;" href="challenges/autodata.html" class="challenge link-purple">
-                                        Autodata</a></span>
-                                    </header>
-                                    <article class="paper-card__description">
-
-                                        <div class="paper-card__content">
-                                            <p class="block-with-text">
-                                                Although genuine intelligence may still be a bit far off, AI technologies are still expected to reign in 2018. Now is the right time to innovate in the AI space. Build bots, train your models, automate your everyday.                        </p>
-                                                <a href="challenges/autodata.html" class="challenge link-orange">Read
-                                                    more...</a>
-                                                </div>
-                                            </article>
-                                        </div>
-                                    </div>
-    
-                        <div class="p-3 m-3 title"><h2> Special Prizes </h2></div>
-                                <div style="height: 285px;" class="row paper-card ">
-                                        <div class="col-4">
-                                            <img src="src/assets/images/HasuraLogoHorizontal.png" alt="" >
-                                        </div>
-                                        <div class="col-8">
-                                            <header class="paper-card__header" style="height: 37px;">
-                                                <span class="paper-card__title"><a style="font-size: 24px;" href="challenges/autodata.html" class="challenge link-purple">Hasura</a></span>
-                                            </header>
-                                            <article class="paper-card__description">
-
-                                                <div class="paper-card__content">
-                                                    <p class="block-with-text">
-                                                        Use <a href="https://hasura.io/" class="link-orange"   target="_blank">Hasura's platform</a> to build your project and the best project will win a cash prize.
-                                                    </p>
-                                                    <!-- <a href="challenges/autodata.html" class="challenge link-orange">Read
-                                                        more...</a> -->
-                                                </div>
-                                            </article>
-                                        </div>  
-                                    </div>
-                                </div>
-
-                            </div>
-                        </section>
-                                <!-- Challenges Section ================================================-->
-
-                                <!-- Eligible Section ================================================-->
-
-                                <section id="participation" class="eligible bg__white activities" >
-
-                                    <div class="content-md">
-
-
-                                        <h2 class="title">Am I eligible to participate in the hackathon? </h2>
-
-                                        <h1 class="eligible-description">If you are a Student having any of these skills then you are highly eligible.</h1>
-
-                                        <div class="eligible-wrap">
-
-                                            <figure>
-                                                <img src="src/assets/images/data_analyst.svg" alt="Data Analyst" class="blockspan">
-                                                <figcaption>Data Analyst</figcaption>
-                                            </figure>
-
-
-                                            <figure>
-                                                <img src="src/assets/images/frontend_developer.svg" alt="Frontend Developer" class="blockspan">
-                                                <figcaption>Frontend Developer</figcaption>
-                                            </figure>
-
-
-                                            <figure>
-                                                <img src="src/assets/images/project_manager.svg" alt="Project Manager" class="blockspan">
-                                                <figcaption>Project Manager</figcaption>
-                                            </figure>
-
-
-                                            <figure>
-                                                <img src="src/assets/images/data_enthusiast.svg" alt=" Data Enthusiast" class="blockspan">
-                                                <figcaption>Data Enthusiast</figcaption>
-                                            </figure>
-
-                                            <figure>
-
-                                            </figure>
-                                            <figure>
-                                                <img src="src/assets/images/designer.svg" alt="Designer" class="blockspan">
-                                                <figcaption>Designer</figcaption>
-                                            </figure>
-
-                                            <figure>
-                                                <img src="src/assets/images/mobile_developer.svg" alt="" class="blockspan">
-                                                <figcaption>Mobile Developer</figcaption>
-                                            </figure>
-
-
-                                        </div>
-
-
-
-                                    </div>
-                                </section>
-
-                                <!-- Eligible Section ================================================-->
-
-                                <!-- How to Section ================================================-->
-                                <section id="howTo" class="p-0">
-                                    <div class="row m-0" style="background: #27b798;">
-                                        <div class="col-2"></div>
-                                        <figure class="col-3 ">
-                                            <img class="h-100 float-right"  src="src/assets/images/girl_participate.svg" alt="">
-                                        </figure>
-                                        <h2 class="col-5 my-auto" style="color: white;">How to Participate? </h2>
-                                    </div>
-                                </section>
-                                <section id="register" style="padding-top: 40px;">
-                                    <div class="content-sm">
-                                        <div class="register-steps--mob">
-                                            <div class="step">
-                                                <figure>
-                                                    <img src="src/assets/images/register_icon.svg" alt="">
-                                                    <figcaption>
-                                                        <!--<a href="https://docs.google.com/a/yipl.com.np/forms/d/e/1FAIpQLSc3Oa_-UXjdlv252IRY4g4-wEREen4X1Y6_eo6tlPy_ePgWVw/viewform"><span-->
-                                                        <!--class="blockspan register-link">Register Here</span></a>-->
-                                                        <span>Registration</span>
-                                                    </figcaption>
-                                                </figure>
-                                                <div>
-                                                </div>
-                                                <figure>
-                                                    <img src="src/assets/images/email_star.svg" alt="">
-                                                    <figcaption>
-                                                        <span>A few days later, you will receive an email. The email will instruct to confirm your participation or inform you that the seats are full.</span>
-                                                    </figcaption>
-                                                </figure>
-                                                <figure>
-                                                    <img src="src/assets/images/mouse_icon.svg" alt="">
-                                                    <figcaption>
-                                                        <span>In case it asks you to confirm your participation, follow the instruction to confirm.</span>
-                                                    </figcaption>
-                                                </figure>
-                                                <figure>
-                                                    <img src="src/assets/images/confirm_icon.svg" alt="">
-                                                    <figcaption>
-                                                        <span>Next, you will receive an email informing about your confirmation and list of important instructions and information for the hackathon. </span>
-                                                    </figcaption>
-                                                </figure>
-                                                <figure>
-                                                    <img src="src/assets/images/setting_icon.svg" alt="">
-                                                    <figcaption>
-                                                        <span>After being selected, make sure to select one of the challenges, go through the data provided in the challenge and prepare your ammunitions (laptop, software, hardware, plans etc) for the day.</span>
-                                                    </figcaption>
-                                                </figure>
-                                            </div>
-                                        </div>
-                                        <ol class="register-steps">
-                                            <li>
-                                                <div style="display: table; height: 100% ">
-                                                    <div style="display: table-cell; vertical-align: middle;">
-                                                        <!--<a href="https://docs.google.com/a/yipl.com.np/forms/d/e/1FAIpQLSc3Oa_-UXjdlv252IRY4g4-wEREen4X1Y6_eo6tlPy_ePgWVw/viewform"><span-->
-                                                        <!--class="blockspan register-link">Register Here</span></a>-->
-                                                        <span>Registration</span>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div style="display: table; height: 100% ">
-                                                    <div style="display: table-cell; vertical-align: middle;">
-                                                        <span>A few days later, you will receive an email. The email will instruct to confirm your participation or inform you that the seats are full.</span>
-                                                    </div>
-                                                </div>
-                                                <!--<span>A few days later, you will receive an email. The email will instruct to confirm your participation or inform you that the seats are full.</span>-->
-                                            </li>
-                                            <li>
-                                                <div style="display: table; height: 100% ">
-                                                    <div style="display: table-cell; vertical-align: middle;">
-                                                        <span>In case it asks you to confirm your participation, follow the instruction to confirm.</span>
-                                                    </div>
-                                                </div>
-                                                <!--<span>In case it asks you to confirm your participation, follow the instruction to confirm.</span>-->
-                                            </li>
-                                            <li>
-                                                <div style="display: table; height: 100% ">
-                                                    <div style="display: table-cell; vertical-align: middle;">
-                                                        <span>Next, you will receive an email informing about your confirmation and list of important instructions and information for the hackathon. </span>
-                                                    </div>
-                                                </div>
-                                                <!--<span>In your next email, you will receive an email informing about your confirmation and list of important instructions and information for the hackathon. </span>-->
-                                            </li>
-                                            <li>
-                                                <div style="display: table; height: 100% ">
-                                                    <div style="display: table-cell; vertical-align: middle;">
-                                                        <span>After being selected, make sure to select one of the tracks, come up with an interesting idea/solution in the track and prepare your ammunitions (laptop, software, hardware, plans etc) for the day.</span>
-                                                    </div>
-                                                </div>
-                                                <!--<span>In your next email, you will receive an email informing about your confirmation and list of important instructions and information for the hackathon. </span>-->
-                                            </li>
-                                        </ol>
-                                    </div>
-                                </section>
-                                <!-- How to Section ================================================-->
-                                <!-- Juding Criteria ================================================-->
-                                <section id="criteria" class="criteria activities">
-                                    <div class="criteria-sec" style="padding-bottom: 30px;">
-                                        <h2 class="title" style="margin-bottom: 0;">Judging Criteria</h2>
-                                        <div class="content-sm">
-                                            <article class="criteria__item">
-                                                <h1 class="title">Impact</h1>
-                                                <p class="criteria__item-desc">How much impact (quality and quantity) can this project have? Does it solve a big problem or a little problem?</p>
-                                            </article>
-                                            <article class="criteria__item">
-                                                <h1 class="title">Creativity</h1>
-                                                <p class="criteria__item-desc">How creative is the approach? Is the project new and something that hasn’t been attempted before? Is it something that isn’t being addressed by the market?</p>
-                                            </article>
-                                            <article class="criteria__item">
-                                                <h1 class="title">Product</h1>
-                                                <p class="criteria__item-desc">How well does this project fit the needs of the challenge it addresses? How user friendly is the technology? Is it a complete solution or does it have a long way to go?</p>
-                                            </article>
-                                            <article class="criteria__item">
-                                                <h1 class="title">Presentation</h1>
-                                                <p class="criteria__item-desc">How well did the team communicate their project? Are they effective in telling the story of the project and why it is important?</p>
-                                            </article>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </section>
-                        <!-- Rightsd/License ================================================-->
-
-                        <!-- Schedule Section ================================================-->
-
-                        <section id="schedule" class="opendata-schedule">
-
-                            <div class="content-md ">
-                                <h2 class="title">Schedule</h2>
-
-                                <div class="schedule-wrap schedule ">
-
-                                    <figure class="schedule__item row">
-
-                                        <div class="col-2"></div>
-                                        <div class="schedule__img-wrap  col-3 p-0">
-                                            <img class="img-fluid h-100" src="src/assets/images/two_girls.svg" alt="">
-                                        </div>
-
-                                        <figcaption class=" text-center col-5" >
-                                            <h1 style="word-wrap: break-word;">Registration</h1>
-                                            <span class="">DAY 1 <br><br>11:00 AM - 1:00 PM</span>
-                                        </figcaption>
-<!-- 
-                    <figcaption class="schedule__caption-mob col-">
-                        <h1 class="schedule__type schedule__type--mob">Registration</h1>
-                        <br><br><br><br>
-                        <span class="schedule__date schedule__date--mob">11:00 AM - 1:00 PM </span>
-                    </figcaption> -->
-                </figure>
-                
-                <figure class="schedule__item row">
-                    <div class="col-2"></div>
-                    <figcaption class="text-center col-5 my-auto">
-                        <h1 class="">Lunch</h1>
-                        <span class="">DAY 1 <br><br>1:00 PM - 1:45 PM</span>
-                    </figcaption>
-
-                    <div class="col-3 p-0">
-                        <img class="img-fluid h-100" src="src/assets/images/lunch.svg" alt="">
-                    </div>
-                    <!-- 
-                    <figcaption class="schedule__caption-mob">
-                        <h1 class="schedule__type schedule__type--mob">DAY 1 <br><br>Lunch</h1>
-                        <span class="schedule__date schedule__date--mob">1:00 PM - 1:45 PM</span>
-                    </figcaption> -->
-                </figure>
-
-
-
-                <figure class="schedule__item row">
-                    <div class="col-2"></div>
-                    <div class="col-3 p-0">    
-                        <img class="img-fluid h-100" src="src/assets/images/boy_with_laptop.svg" alt="">
-                    </div>
-
-                    <figcaption class=" text-center  my-auto col-5">
-                        <h1 class="">Hack</h1>
-                        <span class="">DAY 1 <br><br>2:00 PM</span>
-                    </figcaption>
-<!-- 
-                    <figcaption class="schedule__caption-mob">
-                        <h1 class="schedule__type schedule__type--mob">Start Hacking</h1>
-                        <span class="schedule__date schedule__date--mob">DAY 1 <br><br>2:00 PM</span>
-                    </figcaption> -->
-                </figure>
-
-                <figure class="schedule__item row">
-                    <div class="col-2"></div>
-                    <figcaption class=" text-center col-5  my-auto">
-                        <h1 class="">Dinner</h1>
-                        <span class=" ">DAY 1 <br><br>9:00 PM - 9:45 PM</span>
-                    </figcaption>
-
-                    <div class=" col-3 p-0">
-                        <img class="img-fluid h-100" src="src/assets/images/lunch.svg" alt="">
-                    </div><!-- 
-                    <figcaption class="schedule__caption-mob">
-                        <h1 class="schedule__type schedule__type--mob">Dinner</h1>
-                        <span class="schedule__date schedule__date--mob">DAY 1 <br><br>9:00 PM - 9:45 PM</span>
-                    </figcaption> -->
-                </figure>
-
-               <!-- <figure class="schedule__item">
-
-                    <figcaption class="schedule__caption-des">
-                        <h1 class="schedule__type schedule__type--des">Hack</h1>
-                        <span class="schedule__date schedule__date--des">12:45 PM - 2:00 PM</span>
-                    </figcaption>
-
-                    <div class="schedule__img-wrap">
-                        <img class="schedule__img" src="src/assets/images/girl_with_laptop.svg" alt="">
-                    </div>
-                    <figcaption class="schedule__caption-mob">
-                        <h1 class="schedule__type schedule__type--mob">Hack</h1>
-                        <span class="schedule__date schedule__date--mob">12:45 PM - 2:00 PM</span>
-                    </figcaption>
-                </figure>-->
-
-
-
-                <figure class="schedule__item row">
-                    <div class="col-2"></div>
-                    <div class="col-3 p-0">
-                        <img class="img-fluid h-100" src="src/assets/images/criteria.svg" alt="">
-                    </div>
-
-                    <figcaption class="text-center col-5  my-auto">
-                        <h1 class="">Judges Visit</h1>
-                        <span class="">DAY 2 <br><br>10:00 AM - 12:00 PM</span>
-                    </figcaption>
-                </figure>
-
-                <figure class="schedule__item row">
-
-                    <div class="col-2"></div>
-                    <figcaption class=" text-center col-5  my-auto  ">
-                        <h1 class=" my-auto ">Tech Check</h1>
-                        <span class=" ">DAY 2 <br><br>12:00 PM - 1:00 PM</span>
-                    </figcaption>
-                    <div class=" col-3 p-0 ">
-                        <img class="img-fluid h-100" src="src/assets/images/tech_check.svg" alt="">
-                    </div>
-<!-- 
-                    <figcaption class="schedule__caption-mob">
-                        <h1 class="schedule__type schedule__type--mob">Tech Check</h1>
-                        <span class="schedule__date schedule__date--mob">DAY 2 <br><br>10:00 AM - 12:00 PM</span>
-                    </figcaption> -->
-                </figure>
-                <figure class="schedule__item row">
-                    <div class="col-2"></div>
-                    <div class="schedule__img-wrap col-3 p-0">
-                        <img class="img-fluid h-100" src="src/assets/images/lunch.svg" alt="">
-                    </div>
-                    <figcaption class="text-center col-5  my-auto">
-                        <h1 class="">Lunch</h1>
-                        <span class="">DAY 2 <br><br>12:00 PM - 12:45 PM</span>
-                    </figcaption>
-
-                    <!-- 
-                    <figcaption class="schedule__caption-mob">
-                        <h1 class="schedule__type schedule__type--mob">DAY 2 <br><br>Lunch</h1>
-                        <span class="schedule__date schedule__date--mob">12:00 PM - 12:45 PM</span>
-                    </figcaption> -->
-                </figure>
-                <br>
-                <figure class="schedule__item row">
-
-
-                    <div class="col-2"></div>
-                    <figcaption class=" text-center col-5  my-auto" >
-                        <h1 class="">Presentation</h1>
-                        <span class="">DAY 2 <br><br>1:30 PM - 3:30 PM</span>
-                    </figcaption>
-                    <div class="schedule__img-wrap  col-3 p-0">
-                        <img class="img-fluid h-100" src="src/assets/images/boy_speech.svg" alt="">
-                    </div>
-
-
-                    <!--                     <figcaption class="schedule__caption-mob">
-                        <h1 class="schedule__type schedule__type--mob">Presentation</h1><br>
-                        <span class="schedule__date schedule__date--mob">DAY 2 <br><br>1:30 PM - 3:30 PM</span>
-                    </figcaption> -->
-                </figure>
-
-                <figure class="schedule__item row">
-
-                    <figcaption class="col-md-12 col-xs-12 col-sm-12">
-                        <h1 class=" ">Closing</h1>
-                    </figcaption>
-                    <br>
-                    <div class="schedule__img-wrap col-md-12 col-xs-12 col-sm-12">
-                        <img class="img-fluid h-100" src="src/assets/images/winner.png" alt="">
-                    </div>
-                    <!-- <figcaption class="schedule__caption-mob">
-                        <h1 class="schedule__type schedule__type--mob">Closing</h1>
-                    </figcaption> -->
-                </figure>
-
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- Schedule Section ================================================-->
-
-
-    <section class="attraction">
-        <div class="row">
-
-          <div class="col-md-4 col-sm-12 col-xs-12 col-lg-4 col-xl-4" style="display:table;margin:auto;padding:auto">
-            <p>This will not be only about<br>0's and 1's</p>
-            <br>
-            <h2>Enjoy the performance of <br> THE LOCAL TRAIN <br> during the hackathon</h2>
-            <p><u><a href="http://snu-breeze.com/pronights/">Know More</a></u></p>
-        </div>
-
-        <div class="col-md-8 col-sm-12 col-xs-12 col-lg-8 col-xl-8 w-100" style="padding:0px;">
-            <img src="src/assets/images/thelocaltrain.png" alt="" />
-        </div>
-
-    </div>
-
-
-</section>
-<!-- Rights Liscense ================================================-->
-<section id="rights-liscence" class="rights-license">
-    <h2 class="title">Rights/Licensing</h2>
-    <div class="content-md">
-        <p class="rights-desc">The organizers do not own the rights to nor are committed to utilize any solution developed during the event. Participants are encouraged to submit their solutions under a license that permits the free and open dissemination of the work. Participants
-            are expected to push their final codebase to Github.</p>
-        </div>
-    </section>
-    <!-- Rightsd/License ================================================-->
-    <section id="rights-liscence" class="rights-license">
-        <h2 class="title">Code Of Conduct</h2>
-        <div class="content-md">
-            <p class="rights-desc">Please find the <b>HackData 2.0</b> Code Of Conduct <a href="https://hackcodeofconduct.org/550-hackdata_2_0" class="link-orange">here</a>.</p>
-        </div>
-    </section>
-    <!-- Rights Liscense ================================================-->
-    <section id="supporters" class="supporters" style="padding: 0;">
-        <div class="sponsor-wrap">
-            <div class="content-md">
-                <h2 class="title">Organizers</h2>
-                <div class="organizer-wrap">
-                    <div class="row">
-                        <div class="col-4" style="text-align: center;">
-                            <!-- <a href="#" class="partner-block" target="_blank"> -->
-                                <img src="src/assets/images/snu_acm1.png" alt="" class=" w-100"   style=" margin-top: 21px">
-                            <!-- </a> -->
-                        </div>
-                        <div class="col-4" style="text-align: center;">
-                            <!-- <a href="#" class="partner-block" target="_blank"> -->
-                                <img src="src/assets/images/dsc.jpg" alt=""   style=" margin-top: 21px;width:150px">
-                            <!-- </a> -->
-                        </div>
-                        <div class="col-4 " style="text-align: center; padding-top: 2em;">
-                            <!-- <a href="#" class="partner-block" target="_blank"> -->
-                                <img src="src/assets/images/acm_w.png" alt="" class="" style="width: 55%; margin-top: 21px">
-                            <!-- </a> -->
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!--Title Sponsor -->
-
-    <!--section id="sponsors" class="supporters" style="padding: 0;">
-        <div class="sponsor-wrap">
-            <div class="content-md">
-            <h2 class="title">Title Sponsor</h2>
-            <div class="organizer-wrap">
-                <div class="row">
-                <div class="col-12" style="text-align: center;">
-                        <a href="https://www.techgig.com/home" class="partner-block" target="_blank">
-                            <img src="src/assets/images/techgig.svg" alt="" style="width: 360px; margin-top: 21px">
-                        </a>
-                    </div>
-            </div>
-        </div>
-    </section-->
-
-    <!-- Sponsors -->
-
-    <!--section id="sponsors" class="supporters" style="padding: 0;">
-        <div class="sponsor-wrap">
-            <div class="content-md">
-            <h2 class="title">Sponsors</h2>
-                <div class="organizer-wrap">
-                <div class="row">
-
-                    <div class="col-6">
-
-                    </div>
-
-                </div>
-                <div class="row">
-                <div class="row">
-                <div class="col-6">
-                        <a href="https://www.womentechmakers.com/" class="partner-block" target="_blank">
-                            <img src="src/assets/images/wtm.png" alt="" style="width: 400px; margin-top: 21px">
-                        </a>
-                    </div>
-                    <div class="col-6">
-                        <a href="https://jumper.ai/" class="partner-block" target="_blank">
-                            <img src="src/assets/images/jumper.svg" alt="" style="width: 404px; margin-top: 21px">
-                        </a>
-                    </div>
-
-                </div>
-                <div class="row">
-                    <div class="col-3">
-                        <a href="https://www.hackerrank.com/dashboard" class="partner-block" target="_blank">
-                            <img src="src/assets/images/hacker.png" style="width: 214px" alt="">
-                        </a>
-                    </div>
-                    <div class="col-3">
-                        <a href="https://www.winuall.com/" class="partner-block" target="_blank">
-                            <img src="src/assets/images/win.png" alt="" style="width: 214px">
-                        </a>
-                    </div>
-                    <div class="col-3">
-                        <a href="https://www.hackster.io/" class="partner-block" target="_blank">
-                            <img src="src/assets/images/hackster.png" style="width: 214px;" alt="">
-                        </a>
-                    </div>
-                    <div class="col-3">
-                        <a href="http://www.johnsnowlabs.com/" class="partner-block" target="_blank">
-                            <img src="src/assets/images/john-snow-labs-logo.png" alt="" style="width: 214px; margin-top: -7px;">
-                        </a>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-3">
-                        <a href="http://get.tech/" class="partner-block" target="_blank">
-                            <img src="src/assets/images/tech.png" style="width: 150px;" alt="">
-                        </a>
-                    </div>
-                    <div class="col-3">
-                        <a href="https://www.fastly.com/" class="partner-block" target="_blank">
-                            <img src="src/assets/images/fastly.png" style="width: 173px;" alt="">
-                        </a>
-                    </div>
-                    <div class="col-3">
-                        <a href="https://www.python.org/" class="partner-block" target="_blank">
-                            <img src="src/assets/images/python_logo.svg" style="width: 228px; margin-top: 26px" alt="">
-                        </a>
-                    </div>
-                    <div class="col-3">
-                        <a href="https://github.com/" class="partner-block" target="_blank">
-                            <img src="src/assets/images/github.png" alt="" style="width: 275px; margin-top: 11px;">
-                        </a>
-                </div>
-
-
-
-                </div>
-
-            <div class="row">
-                <div class="col-3">
-                        <a href="https://www.npmjs.com/" class="partner-block" target="_blank">
-                            <img src="src/assets/images/npm.png" alt="" style="width: 150px; margin-top: 21px">
-                        </a>
-                </div>
-                <div class="col-3">
-                        <a href="https://about.gitlab.com/" class="partner-block" target="_blank">
-                            <img src="src/assets/images/gitlab1.png" style="width: 260px; margin-top: 12px" alt="">
-                        </a>
-                </div>
-
-                    <div class="col-3">
-                        <a href="https://www.jetbrains.com/" class="partner-block" target="_blank">
-                            <img src="src/assets/images/jetbrains1.png" alt="" style="width: 100px;">
-                        </a>
-                    </div>
-
-                <div class="col-3">
-                        <a href="https://iconscout.com/" class="partner-block" target="_blank">
-                            <img src="src/assets/images/icon-logo.svg" alt="" style="width: 210px; margin-top: 15px">
-                        </a>
-                </div>
-            </div>
-            <div class="row">
-                    <div class="col-3">
-                        <a href="https://www.womenwhocode.com/" class="partner-block" target="_blank">
-                            <img src="src/assets/images/wwc.png" style="width: 150px; margin-top: 23px" alt="">
-                        </a>
-                    </div>
-                    <div class="col-3">
-                        <a href="https://evernote.com/" class="partner-block" target="_blank">
-                            <img src="src/assets/images/evernote.png" style="width: 200px; margin-top: 42px" alt="">
-                        </a>
-                    </div>
-                    <div class="col-3">
-                        <a href="https://dev.to/" class="partner-block" target="_blank">
-                            <img src="src/assets/images/dev.png" style="width: 138px; margin-top: 54px" alt="">
-                        </a>
-                    </div>
-
-                     <div class="col-3">
-                        <a href="https://www.docker.com/" class="partner-block" target="_blank">
-                            <img src="src/assets/images/docker.png" style="width: 204px; margin-top: 41px" alt="">
-                        </a>
-                    </div>
-
-                </div>
-                <div class="row">
-
-
-                    <div class="col-3">
-                        <a href="http://www.advantedge.vc/" class="partner-block" target="_blank">
-                            <img src="src/assets/images/advantage.jpeg" style="width: 98px; margin-top: 43px" alt="">
-                        </a>
-                    </div>
-                    <div class="col-3">
-                      <a href="https://www.techgig.com/home" class="partner-block" target="_blank">
-                          <img src="src/assets/images/techgig.svg" style="width:250px;margin-top: 64px" alt="">
-                      </a>
-                    </div>
-
-
-                </div>
-
-                <br>
-
-            <div class="row" >
-
-                <div class="col-12" style="text-align: center;">
-                    <h2><a target="_blank" style="color:#27b798;" href="sponsorship/hackdata.pdf"><u>(Download Sponsorship Brochure)</u></a></h2>
-                </div>
-            </div>
-
-        </div>
-    </section-->
-
-
-<!-- 
-    <section id="sponsors" class="supporters" style="padding: 0;">
-        <div class="sponsor-wrap">
-            <div class="content-md">
-                <h2 class="title">2017 Sponsors</h2>
-                <div class="organizer-wrap">
-                  <div class="row">
-
-                      <div class="col-12 w-100">
-                        <img src="src/assets/images/collage-2018-01-04-3.jpg" alt=""><br>
-                    </div>
-                    <div class="col-12" style="text-align: center;">
-                        <h2><a target="_blank" style="color:#27b798;" href="sponsorship/hackdata.pdf"><u>(Download Sponsorship Brochure)</u></a></h2>
-
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
+<!--cover section slider end -->
+
+<!--event info -->
+<!-- <section class="pt50 pb50">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-4 col-md-4  ">
+				<div class="icon_box_two">
+					<i class="ion-ios-calendar-outline"></i>
+					<div class="content">
+						<h5 class="box_title">
+							DATE
+						</h5>
+						<p>
+							4-6 November 2018
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-4 col-md-4  ">
+				<div class="icon_box_two">
+					<i class="ion-ios-location-outline"></i>
+					<div class="content">
+						<h5 class="box_title">
+							location
+						</h5>
+						<p>
+							Shiv Nadar University, Dadri
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </section> -->
 
+<!--about mission of hackdata -->
+<section class="pt50 pb50">
+	<div class="container asd">
+		<div class="section_title">
+			<h3 class="title">
+				Mission
+			</h3>
+		</div>
+		<div class="row justify-content-center">
+			<div class="col-12 col-md-6">
+				<p>
+					Our mission is to allow participants to be a part of a gender diverse and technologically inclined community. It is to bring people with technical backgrounds together
+to form teams to solve a problem or develop new ideas.
+Our goal is to make way for newcomers and to make them familiar with the hackathon environment while learning how tackle with some of the most exciting problems.
+Well, we here at SNU provide you with a platform to each contestant to showcase how avant-garde they are and also test their problem solving skills under the constraints of time.
+So buckle up!
+Prepare yourself to help your brain transform all the technical thoughts into reality.
+Something awesome waits for you!!!!
+				</p>
+			</div>
+			<div class="col-12 col-md-6" style="background: url('assets/img/bg/mission.png'); background-size: contain; background-size: cover;">
+			</div>
+		</div>
+	</div>
+</section>
+<!-- end of mission part -->
+
+<!-- about part starts -->
+<section id="about" class="pt50 pb50">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-12 col-md-6">
+				<p></p>
+			</div>
+			<div class="col-12 col-md-6">
+				<div class="section_title">
+					<h3 class="title">
+						About HackData
+					</h3>
+				</div>
+			</div>
+		</div>
+		<div class="row justify-content-center">
+			<div class="col-12 col-md-6" style="background: url('assets/img/bg/about.png');background-size: cover;">
+			</div>
+			<div class="col-12 col-md-6">
+				<p>
+					Hackdata is a multifaceted and a social coding event that would bring together computer programmers and other interested people together
+from a variety of fields under one roof to improve upon or build a new software program.
+Engineers, business students, designers and enterpreneurs would together build solutions utilizing data science in useful and positive ways.
+
+Finally, the goal of HackData is to create usable software with the goal of creating a functioning product by the end of the event.
+There is a special award category for the all women's team that makes the best project! This should surely motivate females to form and work in all women's teams.
+				</p>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- about part ends -->
+
+<!-- atal part starts -->
+<section class="pt50 pb50">
+	<div class="container asd">
+		<div class="section_title">
+			<h3 class="title">
+				About Atal Incubation Center
+			</h3>
+		</div>
+		<div class="row justify-content-center">
+			<div class="col-12 col-md-6">
+				<p>
+					The Government of India setup the Atal Innovation Mission (AIM) at NITI Aayog in 2016 with the overarching purpose of promoting a culture of innovation and entrepreneurship in the country. This was done to address the need to create high-class incubation facilities across various parts of India with suitable physical infrastructure in terms of capital equipment and operating facilities, coupled with the availability of sectoral experts for mentoring the start-ups.
+The identified sectors included manufacturing, transport, energy, health, education, agriculture, water and sanitation etc. 
+				</p>
+			</div>
+			<div class="col-12 col-md-6" style="background: url('assets/img/bg/mission.png'); background-size: contain; background-size: cover;">
+			</div>
+		</div>
+	</div>
+</section>
+<!-- atal part ends -->
+
+ <!-- tracks begin -->
+	<section id="tracks" class="pt50 pb50">   
+		<div class="container">
+		<div class="row justify-content-center mt30">
+			<div class="section_title" style="margin: 0 475px;">
+			<h3 class="title">
+				Tracks
+			</h3>
+		</div> 
+			<div class="col-12 col-md-6 col-lg-6">
+				<div class="icon_box_one ">
+					<div class="content item">
+						<h4>Entertainment and Travel</h4>
+						<hr>
+						<p class="remove_text less_text">
+							Travel and entertainment are two hot booming sectors in the country. Automate your parties, generate your movie... 
+						</p>
+						<a href="#" class="less_text read_more remove_text">read more</a>
+						<p class="more_text remove_text1" style="display: none;">
+					        Travel and entertainment are two hot booming sectors in the country. Automate your parties, generate your movie scripts, make trip recommendations and plan your vacations with AI and data science.
+					    </p>
+					    <a href="#" class="read_less more_text remove_text1" style="display: none;">read less</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-12 col-md-6 col-lg-6">
+				<div class="icon_box_one">
+					<div class="content item">
+						<h4>Health and Fitness</h4>
+						<hr>
+						<p class="remove_text less_text">
+							With revolutionized software and machinery, effective treatment and disease control could not have been made ...
+						</p>
+						<a href="#" class="less_text read_more remove_text">read more</a>
+						<p class="more_text remove_text1" style="display: none;">
+					        With revolutionized software and machinery, effective treatment and disease control could not have been made easier. Smart trackers and real-time sensors are all the rage these days. Code away at innovative ideas that address these problems that loom over the society and the health and wellness industry today.
+					    </p>
+					    <a href="#" class="read_less more_text remove_text1" style="display: none;">read less</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-12 col-md-6 col-lg-6">
+				<div class="icon_box_one">
+					<div class="content item">
+						<h4>Sustainable Development</h4>
+						<hr>
+						<p class="remove_text less_text">
+							 Technology has changes our life in many ways. Yet, there is reaching out needed, and several social issues...
+						</p>
+						<a href="#" class="less_text read_more remove_text">read more</a>
+						<p class="more_text remove_text1" style="display: none;">
+					        Technology has changes our life in many ways. Yet, there is reaching out needed, and several social issues, especially in a diverse place like India that still remain to be countered.
+					    </p>
+					    <a href="#" class="read_less more_text remove_text1" style="display: none;">read less</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-12 col-md-6 col-lg-6">
+				<div class="icon_box_one">
+					<div class="content item">
+						<h4>Business and Finance</h4>
+						<hr>
+						<p class="remove_text less_text">
+							 Cryptocurrencies and blockchains have created a wave in the market. Stock and mutual fund traders are already ...
+						</p>
+						<a href="#" class="less_text read_more remove_text">read more</a>
+						<p class="more_text remove_text1" style="display: none;">
+					        Cryptocurrencies and blockchains have created a wave in the market. Stock and mutual fund traders are already leveraging the power of computers and data analytics. So are banks and even the smallest of cash-counters. Think, innovate and create something that’ll get the green $ pouring in.
+					    </p>
+					    <a href="#" class="read_less more_text remove_text1" style="display: none;">read less</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- tracks end -->
 
 
+<!-- how to participate -->
+<section id="participation" class="pt50 pb50">
+	<div class="conatiner">
+		<div class="row justify-content-center mt30">
+		<div class="section_title" style="margin: 0 475px";>
+			<h3 class="title">
+				How To Participate
+			</h3>
+		</div>
+		<table style="margin-right: 300px;">
+			<tbody>
+				<tr>
+					<td style="padding-left: 350px;">1</td>
+					<td style="padding-left: 100px;">Registration</td>
+				</tr>
+				<tr>
+					<td style="padding-left: 350px;"></td>
+					<td style="padding-left: 100px;"><hr></td>
+				</tr>
+				<tr>
+					<td style="padding-left: 350px;">2</td>
+					<td style="padding-left: 100px;">A few days later, you will receive an email. The email will instruct to confirm your participation or inform you that the seats are full</td>
+				</tr>
+				<tr>
+					<td style="padding-left: 350px;"></td>
+					<td style="padding-left: 100px;"><hr></td>
+				</tr>
+				<tr>
+					<td style="padding-left: 350px;">3</td>
+					<td style="padding-left: 100px;">In case it asks you to confirm your participation, follow the instruction to confirm></td>
+				</tr>
+				<tr>
+					<td style="padding-left: 350px;"></td>
+					<td style="padding-left: 100px;"><hr></td>
+				</tr>
+				<tr>
+					<td style="padding-left: 350px;">4</td>
+					<td style="padding-left: 100px;">Next, you will receive an email informing about your confirmation and list of important instructions and information for the hackathon</td>
+				</tr>
+				<tr>
+					<td style="padding-left: 350px;"></td>
+					<td style="padding-left: 100px;"><hr></td>
+				</tr>
+				<tr>
+					<td style="padding-left: 350px;">5</td>
+					<td style="padding-left: 100px;">After being selected, make sure to select one of the tracks, come up with an interesting idea/solution in the track and prepare your ammunitions (laptop, software, hardware, plans etc) for the day.</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+</section>
+
+<!-- how to participate section end -->
 
 
-        <section id="sponsors" class="supporters" style="padding: 0;">
-            <div class="sponsor-wrap">
-                <div class="content-md">
-                    <h2 class="title">Sponsors</h2>
-                    <div class="organizer-wrap">
-                        
-                        <div class="row text-center">
-                            
+<!--schedule starts-->
+<section class="pt50 pb50">
+	<div class="container">
+		<div class="row justify-content-center mt30">
+		<div class="section_title" style="margin: 0 475px";>
+			<h3 class="title">
+				Schedule
+			</h3>
+		</div>
+		<div class="col-lg-4 col-4" style=" display: inline-block;">
+			<div style="text-align: right;">11:00 AM - 1:00 PM</div>
+			<div style="text-align: right;">Day 1</div>
+		</div>
+		<div class="col-lg-4 col-4" style=" display: inline-block;">
+			<div class="circle" style="margin: 0 auto;"></div>
+		</div>
+		<div class="col-lg-4 col-4" style=" display: inline-block;">
+			<div style="text-align: left;">Registration</div>
+		</div>
+		<div class="col-lg-4 col-4"style="margin-top: 25px; display: inline-block;">
+			<div style="text-align: right;">1:00 PM - 1:45 PM</div>
+			<div style="text-align: right;">Day 1</div>
+		</div>
+		<div class="col-lg-4 col-4"style="margin-top: 25px; display: inline-block;">
+			<div class="circle" style="margin: 0 auto;"></div>
+		</div>
+		<div class="col-lg-4 col-4"style="margin-top: 25px; display: inline-block;">
+			<div style="text-align: left;">Lunch</div>
+		</div>
+		<div class="col-lg-4 col-4"style="margin-top: 25px; display: inline-block;">
+			<div style="text-align: right;">02:00 PM</div>
+			<div style="text-align: right;">Day 1</div>
+		</div>
+		<div class="col-lg-4 col-4"style="margin-top: 25px; display: inline-block;">
+			<div class="circle" style="margin: 0 auto;"></div>
+		</div>
+		<div class="col-lg-4 col-4"style="margin-top: 25px; display: inline-block;">
+			<div style="text-align: left;">Hack</div>
+		</div>
+		<div class="col-lg-4 col-4"style="margin-top: 25px; display: inline-block;">
+			<div style="text-align: right;">09:00 PM - 09:45 PM</div>
+			<div style="text-align: right;">Day 1</div>
+		</div>
+		<div class="col-lg-4 col-4"style="margin-top: 25px; display: inline-block;">
+			<div class="circle" style="margin: 0 auto;"></div>
+		</div>
+		<div class="col-lg-4 col-4"style="margin-top: 25px; display: inline-block;">
+			<div style="text-alignright;">Dinner</div>
+		</div>
+		<div class="col-lg-4 col-4"style="margin-top: 25px; display: inline-block;">
+			<div style="text-align: right;">10:00 AM - 12:00 PM</div>
+			<div style="text-align: right;">Day 2</div>
+		</div>
+		<div class="col-lg-4 col-4"style="margin-top: 25px; display: inline-block;">
+			<div class="circle" style="margin: 0 auto;"></div>
+		</div>
+		<div class="col-lg-4 col-4"style="margin-top: 25px; display: inline-block;">
+			<div style="text-alignright;">Judges Visit</div>
+		</div>
+		<div class="col-lg-4 col-4"style="margin-top: 25px; display: inline-block;">
+			<div style="text-align: right;">12:00 PM - 01:00 PM</div>
+			<div style="text-align: right;">Day 2</div>
+		</div>
+		<div class="col-lg-4 col-4"style="margin-top: 25px; display: inline-block;">
+			<div class="circle" style="margin: 0 auto;"></div>
+		</div>
+		<div class="col-lg-4 col-4"style="margin-top: 25px; display: inline-block;">
+			<div style="text-align: left;">Tech Check</div>
+		</div>
+		<div class="col-lg-4 col-4"style="margin-top: 25px; display: inline-block;">
+			<div style="text-align: right;">12:00 PM - 12:45 PM</div>
+			<div style="text-align: right;">Day 2</div>
+		</div>
+		<div class="col-lg-4 col-4"style="margin-top: 25px; display: inline-block;">
+			<div class="circle" style="margin: 0 auto;"></div>
+		</div>
+		<div class="col-lg-4 col-4"style="margin-top: 25px; display: inline-block;">
+			<div style="text-align: left;">Lunch</div>
+		</div>
+		<div class="col-lg-4 col-4"style="margin-top: 25px; display: inline-block;">
+			<div style="text-align: right;">01:30 PM - 03:30 PM</div>
+			<div style="text-align: right;">Day 2</div>
+		</div>
+		<div class="col-lg-4 col-4"style="margin-top: 25px; display: inline-block;">
+			<div class="circle" style="margin: 0 auto;"></div>
+		</div>
+		<div class="col-lg-4 col-4"style="margin-top: 25px; display: inline-block;">
+			<div style="text-align: left;">Presentation</div>
+		</div>
+		<div class="col-lg-4 col-4"style="margin-top: 25px; display: inline-block;">
+			<div style="text-align: right;">04:00 PM - 05:00 PM</div>
+			<div style="text-align: right;">Day 2</div>
+		</div>
+		<div class="col-lg-4 col-4"style="margin-top: 25px; display: inline-block;">
+			<div class="circle1" style="margin: 0 auto;"></div>
+		</div>
+		<div class="col-lg-4 col-4"style="margin-top: 25px; display: inline-block;">
+			<div style="text-align: left;">Closing Ceremony</div>
+		</div>
+	</div>
+</section>
+<!--event calender end -->
 
+<!--brands section -->
+<!-- <section class="pt50 pb50" style="background-color: white;">
+	<div class="container">
+		<div class="section_title mb50">
+			<h3 class="title">
+				our sponsors
+			</h3>
+		</div>
+		<div class="brand_carousel owl-carousel">
+			<div class="brand_item text-center">
+				<img src="assets/img/brands/b1.png" alt="brand">
+			</div>
+			<div class="brand_item text-center">
+				<img src="assets/img/brands/b2.png" alt="brand">
+			</div>
 
-                            <div class="row text-center col-12">
-                                <div class="col-6 my-auto">
-                                    <a href="https://hasura.io" class="partner-block" target="_blank">
-                                        <img src="src/assets/images/HasuraLogoHorizontal.png" alt="" style="width: 400px; margin-top: 21px">
-                                    </a>
-                                </div>
-                                <div class="col-6  my-auto">
-                                    <a href="https://www.codingninjas.in/" class="partner-block" target="_blank">
-                                        <img src="src/assets/images/codingninja.svg" alt="" style="width: 404px; margin-top: 21px">
-                                    </a>
-                                </div>
+			<div class="brand_item text-center">
+				<img src="assets/img/brands/b3.png" alt="brand">
+			</div>
+			<div class="brand_item text-center">
+				<img src="assets/img/brands/b4.png" alt="brand">
+			</div>
+			<div class="brand_item text-center">
+				<img src="assets/img/brands/b5.png" alt="brand">
+			</div>
+		</div>
+	</div>
+</section> -->
+<!--brands section end-->
 
-                            </div>
-                            <div class="row">
-                                <div class="col-3">
-                                    <a href="https://www.hackerrank.com/dashboard" class="partner-block" target="_blank">
-                                        <img src="src/assets/images/hacker.png" style="width: 214px" alt="">
-                                    </a> 
-                                </div>
-                                <div class="col-3">
-                                    <a href="https://www.quantopian.com/" class="partner-block" target="_blank">
-                                        <img src="src/assets/images/Quantopian.png" alt="" style="width: 214px">
-                                    </a>
-                                </div>
-                                <div class="col-3">
-                                    <a href="https://restdb.io/" class="partner-block" target="_blank">
-                                        <img src="src/assets/images/restdbiologo1.png" class="h-100" style="width: 214px; margin-top: -10px;" alt="">
-                                    </a>
-                                </div>
-                                <div class="col-3">
-                                    <a href="http://www.johnsnowlabs.com/" class="partner-block" target="_blank">
-                                        <img src="src/assets/images/john-snow-labs-logo.png" alt="" style="width: 214px; margin-top: -7px;">
-                                    </a>
-                                </div>                    
-                            </div>
-                            <div class="row py-auto">
-                                <div class="col-3 py-auto my-auto ">
-                                    <a href="http://get.tech/" target="_blank">
-                                        <img src="src/assets/images/tech.png" alt="">
-                                    </a>
-                                </div>  
-                                <div class="col-3 py-auto my-auto">
-                                    <a href="https://www.womenwhocode.com/" class="partner-block" target="_blank">
-                                        <img src="src/assets/images/wwc.png" alt="">
-                                    </a>
-                                </div>  
-                                <div class="col-3 py-auto my-auto">
-                                    <a href="https://github.com/" class="partner-block" target="_blank">
-                                        <img src="src/assets/images/github.png" alt="" >
-                                    </a>
-                                </div>
-                                <div class="col-3 py-auto my-auto">
-                                    <a href="https://www.python.org/" class="partner-block" target="_blank">
-                                        <img src="src/assets/images/python_logo.svg"  alt="">
-                                    </a>
-                                </div> 
-                            </div>
-                            <div class="row py-auto">
-                                <!-- <div class="col-3">
-                                    <a href="https://www.npmjs.com/" class="" target="_blank">
-                                        <img src="src/assets/images/temboo.png" alt="" style=" margin-top: 21px">
-                                    </a>
-                                </div> 
-                                <div class="col-3 m-0" >
-                                    <a href="https://about.gitlab.com/" class="" target="_blank">
-                                        <img src="src/assets/images/Techgig.png" style=" margin-top: 12px margin-top: -20px;" alt="">
-                                    </a>
-                                </div>
- -->
-                                <div class="col-3 py-auto my-auto ">
-                                    <a href="http://temboo.com/" target="_blank">
-                                        <img src="src/assets/images/temboo.png" alt="">
-                                    </a>
-                                </div>  
-                                <div class="col-3 py-auto my-auto">
-                                    <a href="https://www.techgig.com/" class="partner-block" target="_blank">
-                                        <img src="src/assets/images/Techgig.png">
-                                    </a>
-                                </div>  
-                                <div class="col-3 py-auto my-auto row p-0">
-                                    <div class="col-2"></div>
-                                    <a href="https://zulipchat.com/" class="partner-block col-6 h-100"  target="_blank">
-                                        <img src="src/assets/images/zulip-icon.png">
-                                    </a>
-                                </div>  
-                                <!-- <div class="col-3 py-auto my-auto">
-                                    <a href="https://github.com/" class="partner-block" target="_blank">
-                                        <img src="src/assets/images/github.png" alt="" >
-                                    </a>
-                                </div>
-                                <div class="col-3 py-auto my-auto">
-                                    <a href="https://www.python.org/" class="partner-block" target="_blank">
-                                        <img src="src/assets/images/python_logo.svg"  alt="">
-                                    </a>
-                                </div> --> 
-                            </div>
-<!--                             <div class="row">
-                                <div class="col-3">
-                                    <a href="https://www.npmjs.com/" class="" target="_blank">
-                                        <img src="src/assets/images/temboo.png" alt="" style=" margin-top: 21px">
-                                    </a>
-                                </div> 
-                                <div class="col-3 m-0" >
-                                    <a href="https://about.gitlab.com/" class="" target="_blank">
-                                        <img src="src/assets/images/Techgig.png" style=" margin-top: 12px margin-top: -20px;" alt="">
-                                    </a>
-                                </div>
+<!--register now section -->
+<section class="bg-img pt100 pb100" style="background-image: url('assets/img/bg/tickets.png');">
+	<div class="container">
+		<div class="section_title mb30">
+			<h3 class="title color-light">
+				Be a part of HackData
+			</h3>
+		</div>
+		<div class="row justify-content-center align-items-center">
+			<div class="col-md-9 text-md-left text-center color-light">
+				This is your chance to be a part of one of the coolest Hackathon in India.
+			</div>
+			<div class="col-md-3 text-md-right text-center">
+				<a href="https://docs.google.com/forms/d/e/1FAIpQLSemmmx6c0gT9VkGsTmb3pvY-rJoWYFSmt3R6CqzK-_E2F3RXA/viewform" class="btn btn-primary btn-rounded mt30">Register Now</a>
+			</div>
+		</div>
+	</div>
+</section>
+<!--register now section end-->
 
-                                <div class="col-3 my-auto">
-                                    <a href="https://www.jetbrains.com/" class="" target="_blank">
-                                        <img src="src/assets/images/jetbrains1.png" alt="" style="">
-                                    </a>
-                                </div> 
+<!--footer start -->
+<footer>
+	<section id="footer">
+	<div class="container">
+		<div class="row justify-content-center">
 
-                                <div class="col-3 my-auto">
-                                    <a href="https://iconscout.com/" class="" target="_blank">
-                                        <img src="src/assets/images/icon-logo.svg" alt="" style=" margin-top: 15px">
-                                    </a>
-                                </div>
-                            </div>
- -->                            <!-- <div class="row">
-                                <div class="col-3">
-                                    <a href="https://www.fastly.com/" class="partner-block" target="_blank">
-                                        <img src="src/assets/images/fastly.png" style="width: 173px;" alt="">
-                                    </a>
-                                </div>
-                                <div class="col-3">
-                                    <a href="https://evernote.com/" class="partner-block" target="_blank">
-                                        <img src="src/assets/images/evernote.png" style="width: 200px; margin-top: 42px" alt="">
-                                    </a>
-                                </div>
-                                <div class="col-3">
-                                    <a href="https://dev.to/" class="partner-block" target="_blank">
-                                        <img src="src/assets/images/dev.png" style="width: 138px; margin-top: 54px" alt="">
-                                    </a>
-                                </div>
+			<div class="col-md-6 col-12">
+				<div class="footer_box">
+					<div class="footer_header">
+						<div class="footer_logo">
+							<img src="assets/img/logo.jpeg" alt="HackData">
+						</div>
+					</div>
+					<div class="footer_box_body">
+						<!-- <p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. In rhoncus massa nec gravida tempus. Integer iaculis in aazzzCurabitur a pulvinar nunc. Maecenas laoreet finibus lectus, at volutpat ligula euismod.
+						</p> -->
+						<ul class="footer_social">
+							<!-- <li>
+								<a href="#"><i class="ion-social-pinterest"></i></a>
+							</li -->
+							<li>
+								<a href="https://www.facebook.com/events/323511624869867/?ti=cl"><i class="ion-social-facebook"></i></a>
+							</li>
+							<!-- <li>
+								<a href="#"><i class="ion-social-twitter"></i></a>
+							</li> -->
+							<!-- <li>
+								<a href="#"><i class="ion-social-dribbble"></i></a>
+							</li> -->
+							<li>
+								<a href="https://www.instagram.com/hackdatasnu/"><i class="ion-social-instagram"></i></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
 
-                                <div class="col-3">
-                                    <a href="https://www.docker.com/" class="partner-block" target="_blank">
-                                        <img src="src/assets/images/docker.png" style="width: 204px; margin-top: 41px" alt="">
-                                    </a>
-                                </div>
+			<!-- <div class="col-12 col-md-6">
+				<div class="footer_box">
+					<div class="footer_header">
+						<h4 class="footer_title">
+							instagram
+						</h4>
+					</div>
+					<div class="footer_box_body">
+						<ul class="instagram_list">
+							<li>
+								<a href="#">
+									<img src="assets/img/cleander/c1.png" alt="instagram">
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="assets/img/cleander/c2.png" alt="instagram">
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="assets/img/cleander/c3.png" alt="instagram">
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="assets/img/cleander/c3.png" alt="instagram">
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="assets/img/cleander/c2.png" alt="instagram">
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="assets/img/cleander/c1.png" alt="instagram">
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div> -->
+		</div>
+	</div>
+</section>
+</footer>
+<div class="copyright_footer">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-md-6 col-12">
+				<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | <!-- This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a> -->
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+			</div>
+			<div class="col-12 col-md-6 ">
+				<ul class="footer_menu">
+					<li>
+						<a href="#">Home</a>
+					</li>
+					<li>
+						<a href="#about">About</a>
+					</li>
+					<li>
+						<a href="#tracks">Tracks</a>
+					</li>
+					<li>
+						<a href="#participation">Participation</a>
+					</li>
+					<li>
+						<a href="#contact">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<!--footer end -->
 
-                            </div>
-                             --><div class="row">
-
-
-                                <div class="col-3">
-                                    <a href="http://www.advantedge.vc/" class="partner-block" target="_blank">
-                                        <img src="src/assets/images/advantage.jpeg" style="width: 98px; margin-top: 43px" alt="">
-                                    </a>
-                                </div>
-
-
-                            </div>
-
-                            <br>
-
-                            <div class="row col-12" >
-
-                                <div class="col-12 text-center" style="text-align: center;">
-                                    <h2><a target="_blank" style="color:#27b798;" href="sponsorship/hackdata.pdf"><u>(Download Sponsorship Brochure)</u></a></h2>
-                                </div>
-                            </div>     
-
-                        </div>
-                    </section>
-
-<!-- 
-    <section id="sponsors-new" class="w-100 supporters" style="padding: 0;">
-        <div class="sponsor-wrap w-100">
-            <div class="content-md w-100">
-            <h2 class="title">2018 Sponsors</h2>
-                <div class="organizer-wrap w-100  m-0">
-                  <div class="row w-100 text-center m-0 p-0">
-                      <div class="col-2"></div>
-                      <div class="col-8 w-100 p-0 m-0 row text-center" style="max-height: 15vh;">
-                        <img src="src/assets/images/HasuraLogoHorizontal.png" alt="" class=" m-0 p-0 col-3 h-100" >
-                        <div class="col-3 text-center h-100">
-                        <img src="src/assets/images/tech.png" alt="" class="  col-3 m-0 p-2 h-100  ">
-                        </div>
-                        <img src="src/assets/images/wwc.jpg" alt="" class=" col-3 m-0 p-0 h-100  ">
-                        <img src="src/assets/images/techgig.svg" alt="" class=" col-3 m-0 p-0 h-100  ">
-                        <img src="src/assets/images/python-logo.png" alt="" class=" m-0 p-0 col-2 h-100">
-                        <img src="src/assets/images/Quantopian-logo.jpg" alt="" class=" col-2 m-0 p-0 h-100  ">
-                        <img src="src/assets/images/github.png" alt="" class=" col-3 m-0 p-0 h-100  ">
-                        <img src="src/assets/images/temboo.png" alt="" class=" h-100   m-0  col-2 p-0">
-                        <img src="src/assets/images/hacker.png" alt="" class=" col-3 m-0 p-0 h-100  ">
-                        <img src="src/assets/images/codingninja.svg" alt="" class=" col-3 m-0 p-0 h-100  ">
-                        <img src="src/assets/images/john-snow-labs-logo.png" alt="" class=" col-3 h-100   m-0   p-0">
-
-                      </div>
-                      <div class="col-12" style="text-align: center;">
-                      </div>
-                  </div>
-                </div>
-            </div>
-        </div>
-    </section>
--->
-
-
-<!-- Rightsd/License ================================================-->
-<!-- Interested Section ================================================-->
-<!--<section id="interested" class="interested">-->
-
-
-<!--</div>-->
-<!--</section>-->
-<!-- Interested Section ================================================-->
-<script src="dest/js/script.js"></script>
-<script>
-    $(document).ready(function() {
-            // $sections incleudes all of the container divs that relate to menu items.
-            var $sections = $('section');
-            // The user scrolls
-            $(window).scroll(function() {
-                // currentScroll is the number of pixels the window has been scrolled
-                var currentScroll = $(this).scrollTop();
-                // $currentSection is somewhere to place the section we must be looking at
-                var $currentSection
-                // We check the position of each of the divs compared to the windows scroll positon
-                $sections.each(function() {
-                    // divPosition is the position down the page in px of the current section we are testing
-                    var divPosition = $(this).offset().top;
-                    // If the divPosition is less the the currentScroll position the div we are testing has moved above the window edge.
-                    // the -1 is so that it includes the div 1px before the div leave the top of the window.
-                    if (divPosition - 1 < currentScroll) {
-                        // We have either read the section or are currently reading the section so we'll call it our current section
-                        $currentSection = $(this);
-                        // If the next div has also been read or we are currently reading it we will overwrite this value again. This will leave us with the LAST div that passed.
-                    }
-                    // This is the bit of code that uses the currentSection as its source of ID
-                    var id = $currentSection.attr('id');
-                    $('a').removeClass('active');
-                    $("[href=#" + id + "]").addClass('active');
-                })
-            });
-            $('.challenge').modaal({
-                type: 'ajax',
-                after_open: function() {
-                    $('.navbar').hide();
-                },
-                after_close: function() {
-                    $('.navbar').show();
-                }
-            });
-            $('.judge-link').modaal({
-                type: 'ajax',
-                after_open: function() {
-                    $('.navbar').hide();
-                },
-                after_close: function() {
-                    $('.navbar').show();
-                }
-            });
-            $('.judge-no-link').click(function(e) {
-                e.preventDefault();
-            });
-            $('.see-more-health').click(function() {
-                var txt = $(".challenges-type-health-more").is(':visible') ? 'Show more' : 'Show less';
-                $('.see-more-health').text(txt);
-                $('.challenges-type-open-health').slideToggle("slow", function() {
-                    // Animation complete.
-                });
-                $('.challenges-type-health-more').slideToggle("slow", function() {
-                    // Animation complete.
-                });
-            })
-            $('.see-more-proc').click(function() {
-                var txt = $(".data-source--procure").is(':visible') ? 'Show more' : 'Show less';
-                $('.see-more-proc').text(txt);
-                $('.data-source--procure').slideToggle();
-                $('.challenges-type-open-procure').slideToggle();
-            })
-            $('.view-all-1').on('click', function() {
-                $('.row').slideToggle();
-            })
-        })
-    </script>
-    <script>
-        var partJson = {
-          "particles": {
-            "number": {
-              "value": 100,
-              "density": {
-                "enable": true,
-                "value_area": 800
-            }
-        },
-        "color": {
-          "value": "#27b798"
-      },
-      "shape": {
-          "type": "edge",
-          "stroke": {
-            "width": 0,
-            "color": "#27b798"
-        },
-        "polygon": {
-            "nb_sides": 5
-        },
-        "image": {
-            "src": "img/github.svg",
-            "width": 100,
-            "height": 100
-        }
-    },
-    "opacity": {
-      "value": 0,
-      "random": false,
-      "anim": {
-        "enable": false,
-        "speed": 1,
-        "opacity_min": 0.1,
-        "sync": false
-    }
-},
-"size": {
-  "value": 3,
-  "random": true,
-  "anim": {
-    "enable": false,
-    "speed": 40,
-    "size_min": 0.1,
-    "sync": false
-}
-},
-"line_linked": {
-  "enable": true,
-  "distance": 150,
-  "color": "#27b798",
-  "opacity": 0.3,
-  "width": 1
-},
-"move": {
-  "enable": true,
-  "speed": 6,
-  "direction": "none",
-  "random": false,
-  "straight": false,
-  "out_mode": "out",
-  "bounce": false,
-  "attract": {
-    "enable": false,
-    "rotateX": 600,
-    "rotateY": 1200
-}
-}
-},
-"interactivity": {
-    "detect_on": "canvas",
-    "events": {
-      "onhover": {
-        "enable": true,
-        "mode": "grab"
-    },
-    "onclick": {
-        "enable": true,
-        "mode": "push"
-    },
-    "resize": true
-},
-"modes": {
-  "grab": {
-    "distance": 150,
-    "line_linked": {
-      "opacity": 1
-  }
-},
-"bubble": {
-    "distance": 400,
-    "size": 40,
-    "duration": 2,
-    "opacity": 8,
-    "speed": 3
-},
-"repulse": {
-    "distance": 200,
-    "duration": 0.4
-},
-"push": {
-    "particles_nb": 4
-},
-"remove": {
-    "particles_nb": 2
-}
-}
-},
-"retina_detect": true
-};
-var jsonUri = "data:text/plain;base64,"+window.btoa(JSON.stringify(partJson));
-particlesJS.load('particles-js1',jsonUri , function() {
-  console.log('callback - particles.js config loaded');
-});
-</script>
+<!-- jquery -->
+<script src="assets/js/jquery.min.js"></script>
+<!-- bootstrap -->
+<script src="assets/js/popper.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/waypoints.min.js"></script>
+<!--slick carousel -->
+<script src="assets/js/owl.carousel.min.js"></script>
+<!--parallax -->
+<script src="assets/js/parallax.min.js"></script>
+<!--Counter up -->
+<script src="assets/js/jquery.counterup.min.js"></script>
+<!--Counter down -->
+<script src="assets/js/jquery.countdown.min.js"></script>
+<!-- WOW JS -->
+<script src="assets/js/wow.min.js"></script>
+<!-- Custom js -->
+<script src="assets/js/main.js"></script>
 </body>
 </html>
