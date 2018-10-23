@@ -166,20 +166,20 @@ ul.nosyely_list {
 }
 
 .brand_item {
-  opacity: 0.3;
-  -webkit-transition: all ease-in-out 0.4s;
-  transition: all ease-in-out 0.4s;
+  opacity: 1;
+  /*-webkit-transition: all ease-in-out 0.4s;
+  transition: all ease-in-out 0.4s;*/
 }
 .brand_item img {
   display: block;
   max-width: 130px;
   margin: 0 auto;
 }
-.brand_item:hover {
+/*.brand_item:hover {
   opacity: 1;
   -webkit-transition: all ease-in-out 0.4s;
   transition: all ease-in-out 0.4s;
-}
+}*/
 
 .icon_list {
   list-style: none;
